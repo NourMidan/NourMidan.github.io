@@ -1,0 +1,332 @@
+body, html{
+ margin: 0;
+ font-family: arial;
+ font-size: 14px;
+ padding:0;
+}
+
+.alpha{
+ display: flex; 
+ 
+}
+/*part1*/
+.p1{
+ background-color: #cce8ed;
+ padding: 0 .8rem;
+ flex: 1;
+}
+
+.name h1{ 
+ margin: 0;
+ text-align: center;
+ padding: 15px;
+ background-color: #059ea6;
+ color: #fff;
+ height: 50px; 
+}
+
+.info{
+ 
+  background-color: #fff;
+}
+
+.info img{
+ width:100%;
+ display:block;
+}
+
+.info p{
+ padding: 2.5%;
+ text-align: justify;
+ line-height: 1.5;
+ font-size: 1.1rem;
+ color: #225b5e;
+}
+
+.info .links{
+ display: flex;
+ justify-content: space-around ;
+ padding: 2.5%;
+ border-top: 1px solid #aaa;
+ background-color: #eee;
+ 
+}
+
+.links li{
+list-style: none; 
+width: 10%;
+}
+ 
+
+
+/*.exp>div*/
+.exp1, .exp2, .exp3, .exp4, .exp5
+{
+ display: flex;
+ width: 100%;
+ height: 25px;
+ background-color:#edebeb;
+ border-radius: 7px; 
+}
+
+.percent1, .percent2, .percent3, .percent4 {
+ display: flex;
+ justify-content: center;  
+ border-radius: 7px 0 0 7px;
+ align-items: center;
+}
+ .exp h3 {
+  color: #edebeb; 
+}
+
+.percent1{
+width: 75%;
+background-color: #18ab6e;
+}
+.percent2{
+width: 60%;
+background-color: #e31717;
+
+}
+.percent3{
+width: 25%;
+background-color:#2ebcd9;
+}
+.percent4{
+width: 15%;
+background-color:#3e9e09;
+}
+
+.percent5{
+width: 100%;
+display:flex;
+}
+
+.back, .mobile , .front{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.front{
+flex:2;
+background-color: #18ab6e;
+border-radius:7px 0 0 7px;
+}
+
+
+.back{
+flex:1;
+background-color: #2ebcd9;
+}
+
+.mobile{
+flex:1;
+background-color: #e31717;
+border-radius:0 7px 7px 0;
+}
+
+.percent5 span{
+color: #edebeb;
+}
+
+.port{
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.portfolio{
+width: 50%;
+background-color: #d0d9d5;
+border-radius: 6px;
+display: flex;
+justify-content: center;
+font-size: 15px;
+}
+
+.portfolio h3{
+color: #099bb5;
+}
+
+.imgs{
+display: flex;
+margin-top: 20px;
+justify-content: space-around;
+}
+
+.imgs img{
+width: 90%;
+}
+
+.imgs img:hover {
+transform: scale(1.5); 
+transition: .3s ease-in-out;
+}
+
+/* End of Part1*/
+/* Part 2*/
+
+.p2{
+  flex: 3;
+  margin-left: .5%;
+}
+
+.mid{
+display:flex;
+margin-top: 20px;
+}
+
+
+.contact, .projects{
+ display: flex;
+ flex: 1;
+ align-items: center;
+ flex-direction: column;
+}
+.title, .title2{
+ width: 85%;
+ justify-content: center;
+ background-color: #d0d9d5;
+ border-radius: 7px;
+ color: #099bb5;
+ font-size: 25px;
+ display: flex;
+}
+.contact img{
+width: 25px;
+height: 25px;
+margin-left: 20px;
+margin-right: 5px;
+}
+
+.number, .mail, .fb_, .msg{
+margin: 10px;
+background-color: lightblue;
+width: 90%;
+height: 60px;
+display: flex;
+align-items: center;
+margin-bottom: 1px;
+color: #225b5e;
+}
+
+.mail{
+background-color: Khaki;
+margin-top: 1px;
+}
+
+.fb_{
+margin-top:1px;
+border-bottom: .5px groove ;
+background-color: #fff;
+}
+
+.msg{
+background-color: #fff;
+margin-top: 1px;
+
+}
+
+.msg button{
+padding: 5px;
+}
+
+.contact a{
+text-decoration: none;
+}
+
+.websites, .desings , .apps{
+border-bottom: .5px groove ;
+width: 90%;
+height: 60px;
+display: flex;
+align-items: center;
+margin-top: 0px;
+margin-bottom: 8px;
+color: #225b5e;
+}
+
+.apps{
+border-bottom: 0px;
+}
+
+.projects .self{
+margin-left: auto;
+margin-right: 10px;
+background-color: #059ea6;
+color: #fff;
+padding: 5px;
+border-radius:7px;
+}
+
+/*Articles*/
+
+.articles{
+display: flex;
+}
+.size{
+text-align: center;
+font-size: 1.5em;
+border-radius: 7px;
+margin: 20px;
+line-height: 1.5;
+padding: 15px;
+color: #ebe7e4;
+}
+.block1, .block2, .block3{
+flex:1 ;
+}
+.blue{
+background-color: #059ea6;
+}
+
+.yellow{
+background-color: #cfb427;
+}
+.red{
+background-color: #e31717;
+}
+.articles p:hover {
+transform: scale(1.04); 
+transition: .3s ease-in-out;
+}
+
+/*responsive*/
+
+@media only screen and ( max-width: 700px) {
+.alpha, .mid, .articles{
+ display: block;
+ width: 100%;
+
+}
+.projects span{
+margin: 2%;
+}
+
+.mid div{
+width: 100%;
+}
+.p2{
+margin-left: 0%;
+}
+}
+@media only screen and ( max-width: 1280px) {
+.p1{
+flex: 1;
+}
+.p2{
+flex: 2;
+}
+.mid{
+display: block;
+}
+.articles{
+display: block;
+}
+
+.back{
+font-size: 12px;
+}
+}
+
